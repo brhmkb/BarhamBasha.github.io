@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Devmy</title>
+        <link rel="icon" type="image/x-icon" href="code.png">
+        <!-- meta tag -->
+        <meta charset="UTF-8">
+        <!-- css file -->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <a class="logo" href="index.html">
+                    <img src="logo.png">
+                </a>
+                <div>
+                    <a href="webdev.html">Web Development</a>
+                    <a href="mobiledev.html">Mobile Development</a>
+                </div>
+            </nav>
+            <main>
+                <section class="intro">
+                    <img src="instructor.svg" height="200px">
+                    <div style="margin-left: 96px;width: 550px;">
+                        <h1>Come teach with us</h1>
+                        <p>Become an instructor and change lives — including your own</p>
+                    </div>
+                </section>
+                <section class="intro" id="request">
+                    <div style="margin-right: 96px;width: 550px;">
+                        <h2>Fill form and become an instructor today</h2>
+                        <p>Join one of the world’s largest online learning marketplaces.</p>
+                    </div>
+                    <form method="post" action="javascript:sendMail();">
+                        <input type="hidden" name="subject" id="subject" value="Become an instructor">
+                        <div class="formField">
+                            <textarea name="body" id="body"></textarea>
+                        </div>
+                        <div class="formField">
+                            <input class="button" type="submit" value="Submit request">
+                        </div>
+                    </form>
+                </section>
+            </main>
+            <footer>
+                <div style="width:50%">
+                    <!-- image logo -->
+                    <!-- <a href="index.html"><img src="" alt="Devmy" height="34"></a> -->
+                    <!-- text logo -->
+                    <a href="index.html" class="logo">Devmy</a>
+                    <p>Your first destination for online learning, as we offer a wide range of professionally provided training courses by our best teachers.</p>
+                </div>
+                <!-- copyright -->
+                <div>@ 2021 Devmy, All rights reserved.</div>
+            </footer>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
