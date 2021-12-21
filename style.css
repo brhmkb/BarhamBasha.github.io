@@ -1,12 +1,18 @@
 /* start general for entire site */
-/* Import Readex Pro font from google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;700&display=swap');
+/* Import Tajawal font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+/* colors */
+body, .logo, nav a, .courses .title, .courses .price {
+    color: #000000;
+}
+.button, footer {
+    background-color:#000000;
+}
 body {
     margin: 0;
-    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Tajawal', sans-serif;
     display: flex;
     flex-direction:column;
-    color: #000000;
 }
 a {
     /* remove underline text from links */
@@ -15,13 +21,11 @@ a {
 .logo {
     font-weight: 700;
     font-size: 25px;
-    color: #000000;
 }
 .logo img {
     height: 25px;
 }
 .button {
-    background-color:#000000;
     color: #fff !important;;
     align-items: center;
     display: inline-flex;
@@ -45,7 +49,8 @@ nav {
 }
 nav a{
     padding: 0 12px;
-    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
 }
 /* hover animation for links */
 nav a:hover {
@@ -100,13 +105,13 @@ section h1 {
 .courses .title {
     margin: 8px 0 4px 0;
 }
-.courses .title, .instructor, .price {
+.courses .title, .courses .instructor, .courses .price {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
-.courses .title, .price{
-    color: #000;
+.courses .title, .courses .price{
+
     font-weight: 500;
 }
 .courses .instructor {
@@ -115,7 +120,6 @@ section h1 {
 }
 /* start footer */
 footer {
-    background-color: #000000;
     padding: 15px 48px;
     color:#fff;
     display:flex;
@@ -135,7 +139,7 @@ form {
 .formField {
     margin-bottom: 15px;
 }
-form input, textarea {
+form input, form textarea {
     width: 100%;
     border: 1px solid #000000;
     padding: 10px;
